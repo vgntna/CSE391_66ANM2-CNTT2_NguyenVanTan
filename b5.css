@@ -1,0 +1,78 @@
+.container-fluid{
+    width: 100%;
+}
+.container{
+    max-width: 1240px;
+    margin: auto;
+}
+.bg-black{
+    background-color: black;
+}
+.bg-grey{
+    background-color: rgb(212, 203, 203);
+}
+.bg-white{
+    background-color: white;
+}
+.bg-yellow{
+    background-color: yellow;
+    border-radius: 6px;
+}
+.bg-red{
+    background-color: red;
+    border-radius: 6px;
+}
+.d-flex{
+    display: flex;
+}
+.text-white{
+    color: white;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.px-3{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.text-big{
+    font-weight: bold;
+    font-size: 20px;
+}
+.search{
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+}
+.m-0{
+    margin: 0;
+}
+.inSearch{
+    padding: 8px;
+}
+.add{
+    padding: 8px;
+    background-color: rgb(66, 66, 242);
+    color: white;
+    border: 1px;
+    border-radius: 6px;
+}
+table, th, td, tr {
+    padding: 4px;
+    text-align: center;
+}
+table{
+    border: 1px solid black;
+    width: 1240px;
+}
+th,td,tr{
+    border-bottom: 1px solid black ;
+}
