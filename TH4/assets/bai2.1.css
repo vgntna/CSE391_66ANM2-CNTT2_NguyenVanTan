@@ -1,0 +1,106 @@
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 18px;
+}
+
+label {
+    width: 160px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 8px;
+    width: 250px;
+    box-sizing: border-box;
+}
+
+#nameCount {
+    font-size: 12px;
+    color: gray;
+    margin-top: 3px;
+}
+
+.password-box {
+    position: relative;
+    width: 250px;
+}
+
+.password-box input {
+    width: 100%;
+    padding-right: 35px;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#strengthBar {
+    width: 250px;
+    height: 6px;
+    background: #ddd;
+    border-radius: 4px;
+    margin-top: 6px;
+    transition: 0.3s;
+}
+
+#strengthBar.active { background: red; }
+#strengthBar.medium { background: orange; }
+#strengthBar.strong { background: green; }
+
+#strengthText {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.gender-options {
+    display: flex;
+    gap: 20px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+}

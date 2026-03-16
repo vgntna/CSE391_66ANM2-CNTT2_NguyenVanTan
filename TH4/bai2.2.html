@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Đặt Hàng</title>
+    <link rel="stylesheet" href="./assets/bai2.2.css">
+</head>
+<body>
+
+<div class="order-wrapper">
+    <div class="card">
+        <h2>🛍️ Form Đặt Hàng</h2>
+        
+        <form id="orderForm" novalidate>
+            <div class="grid-row">
+                <div class="control-group">
+                    <label>Sản phẩm</label>
+                    <select id="product">
+                        <option value="">-- Chọn sản phẩm --</option>
+                        <option value="Ao">Áo (200.000đ)</option>
+                        <option value="Quan">Quần (350.000đ)</option>
+                        <option value="Giay">Giày (500.000đ)</option>
+                    </select>
+                    <small class="error" id="productError"></small>
+                </div>
+
+                <div class="control-group">
+                    <label>Số lượng</label>
+                    <input type="number" id="quantity" min="1" max="99" value="1">
+                    <small class="error" id="quantityError"></small>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label>Ngày giao dự kiến</label>
+                <input type="date" id="deliveryDate">
+                <small class="error" id="dateError"></small>
+            </div>
+
+            <div class="control-group">
+                <label>Địa chỉ nhận hàng</label>
+                <input type="text" id="address" placeholder="Số nhà, tên đường...">
+                <small class="error" id="addressError"></small>
+            </div>
+
+            <div class="control-group">
+                <label>Ghi chú đơn hàng</label>
+                <div class="textarea-wrapper">
+                    <textarea id="note" maxlength="200" placeholder="Yêu cầu đặc biệt..."></textarea>
+                    <span id="noteCount">0/200</span>
+                </div>
+                <small class="error" id="noteError"></small>
+            </div>
+
+            <div class="control-group">
+                <label>Phương thức thanh toán</label>
+                <div class="payment-methods">
+                    <label class="radio-item"><input type="radio" name="payment" value="COD"> COD</label>
+                    <label class="radio-item"><input type="radio" name="payment" value="Bank"> Chuyển khoản</label>
+                    <label class="radio-item"><input type="radio" name="payment" value="Wallet"> Ví điện tử</label>
+                </div>
+                <small class="error" id="paymentError"></small>
+            </div>
+
+            <div class="total-display">
+                <span>Tổng cộng:</span>
+                <strong id="total">0</strong> <small>VNĐ</small>
+            </div>
+
+            <button type="submit" class="btn-primary">Đặt hàng ngay</button>
+        </form>
+
+        <div id="confirmBox" class="modal" style="display:none;">
+            <div class="modal-content">
+                <h3>🔔 Xác nhận đơn hàng</h3>
+                <div id="orderSummary" class="summary-text"></div>
+                <div class="modal-actions">
+                    <button id="confirmBtn" class="btn-confirm">Xác nhận</button>
+                    <button id="cancelBtn" class="btn-cancel">Hủy</button>
+                </div>
+            </div>
+        </div>
+
+        <h3 id="success" class="success-msg"></h3>
+    </div>
+</div>
+
+<script src="./assets/bai2.2.js"></script>
+</body>
+</html>

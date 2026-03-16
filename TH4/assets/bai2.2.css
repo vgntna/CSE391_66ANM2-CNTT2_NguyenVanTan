@@ -1,0 +1,93 @@
+body {
+    font-family: Arial;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 6px;
+    width: 500px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+input, 
+select, 
+textarea {
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 80px;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+#noteCount {
+    font-size: 12px;
+    color: gray;
+    margin-top: 3px;
+    text-align: right;
+}
+
+#noteCount.over {
+    color: red;
+    font-weight: bold;
+}
+
+.payment-options {
+    display: flex;
+    gap: 25px;
+    margin-top: 5px;
+}
+
+.payment-options label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.payment-options input {
+    width: auto;
+}
+
+#total {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+#confirmBox {
+    border: 1px solid #ccc;
+    background: #fafafa;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 300px;
+}
